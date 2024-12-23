@@ -3,18 +3,24 @@ import { ReactNode } from 'react';
 
 type Props = {
     children: ReactNode;
+    url: string;
     image?: string;
 }
 
-const HeroButton = ({ children, image = "" }: Props) => {
-    return(
-        <>
-            <button className="inline-flex flex-row items-center justify-around mr-[20px] mb-[10px] bg-[#ece6f0] border-none text-black font-roboto w-[140px] px-[10px] py-[10px] text-center no-underline text-lg rounded-3xl">
-                <img src={image} alt="" className="w-[32px]" ></img>
-                {children}
-            </button>
-        </>
-    )
+const HeroButton = ({ children, url, image = "" }: Props) => {
+    const handleRedirect = () => {
+        window.open(url, "_blank"); 
+    };
+
+    return (
+        <button 
+            onClick={handleRedirect} 
+            className="inline-flex flex-row items-center justify-around mr-[20px] mb-[10px] bg-[#ece6f0] border-none text-black font-roboto w-[140px] px-[10px] py-[10px] text-center no-underline text-lg rounded-3xl"
+        >
+            <img src={image} alt="" className="w-[32px]" />
+            {children}
+        </button>
+    );
 }
 
 export default HeroButton

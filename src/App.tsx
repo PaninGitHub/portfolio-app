@@ -1,5 +1,6 @@
 import Navibar from "./assets/components/Navibar";
 import Hero from "./assets/components/Hero";
+import DescriptionBox from "./assets/components/DescriptionBox";
 
 function App(){
   return(
