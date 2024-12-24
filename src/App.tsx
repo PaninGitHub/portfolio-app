@@ -29,7 +29,7 @@ function App(){
       <p className="text-white text-center font-mono mt-[50px]">
         Designed by Dinidu Samaranayake using Figma <br/>
         Developed by Dinidu Samaranayake via Vite + React.JS + Tailwind <br/>
-        <a className="text-gray-400" href="https://github.com/PaninGitHub/Pomodoro-Website-Project">Click here for Github Repo</a>
+        <a className="text-gray-400" href="https://github.com/PaninGitHub/portfolio-app">Click here for Github Repo</a>
       </p>
 
     </>
