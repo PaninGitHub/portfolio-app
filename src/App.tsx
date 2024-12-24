@@ -1,8 +1,14 @@
 import Navibar from "./assets/components/Navibar";
 import Hero from "./assets/components/Hero";
 import DescriptionBox from "./assets/components/DescriptionBox";
+import Blog from "./assets/components/Blog"
+import BlogBox from "./assets/components/BlogBox"
+
 
 function App(){
+  const layout = [
+    {}
+  ]
   return(
     <>
       <Navibar />
@@ -16,6 +22,10 @@ function App(){
       He asked that I use my chemistry knowledge to cook methamphetamine, which he would then sell using his connections in the drug world.
       Connections that he made through his career with the DEA
       </Hero>
+      <div className="flex flex-col items-center">
+        <h1 className="font-montserrat font-extrabold text-[7vw] lg:text-[48px] text-white text-center mt-[40px] mb-[40px]">Projects</h1>
+        <BlogBox></BlogBox>
+      </div>
     </>
   )
 }
