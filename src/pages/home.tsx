@@ -5,13 +5,12 @@ import Blog from "../assets/components/Blog"
 import BlogBox from "../assets/components/BlogBox"
 
 
-function Home(){
+const Home = () => {
   const layout = [
     {}
   ]
   return(
     <>
-      <Navibar />
       <Hero>
         My name is Walter Hartwell White. 
         I live at 308 Negra Arroyo Lane, Albuquerque, New Mexico, 87104. 
