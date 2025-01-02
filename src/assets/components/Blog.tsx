@@ -6,10 +6,20 @@ type Props = {
     children: ReactNode;
     role?: string;
     image?: string;
-    url?: string;
+    git_url?: string;
+    proj_url?: string;
 }
 
-const Blog = ({ title, children, role = "", image = "", url = ""}: Props) => {
+const Blog = ({ title, children, role = "", image = "", git_url = "", proj_url = ""}: Props) => {
+    let type = ""
+    const handleRedirect = () => {
+        if(type = "git"){
+            window.open(git_url, "_blank"); 
+        }
+        if(type = "project_url"){
+            window.open(proj_url, "_blank")
+        }
+    };
     const openBlog = () => {
         console.log("Open sesame!")
     } 
@@ -21,8 +31,8 @@ const Blog = ({ title, children, role = "", image = "", url = ""}: Props) => {
             <div className="overflow-hidden mb-[20px] mx-[20px]">
                 <p className="text-[12px] xl:text-[16px] text-center sm:mt-[10px]"> {children} </p>
             </div>
-            {(url != "") ? 
-                <button title="github" className="inline-flex flex-row items-center justify-around mx-[10px] mb-[10px] bg-[#f1f0f3] border-none text-black font-montserrat font-bold w-[100px] lg:w-[140px] px-[5px] py-[5px] text-center no-underline text-sm lg:text-lg rounded-3xl">
+            {(git_url != "") ? 
+                <button onClick={handleRedirect} title="github" className="inline-flex flex-row items-center justify-around mx-[10px] mb-[10px] bg-[#f1f0f3] border-none text-black font-montserrat font-bold w-[100px] lg:w-[140px] px-[5px] py-[5px] text-center no-underline text-sm lg:text-lg rounded-3xl">
                     Github
                     <img src="github.png" alt="" className="w-[32px]" />
                 </button>
