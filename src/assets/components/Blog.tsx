@@ -1,5 +1,5 @@
 import '../../App.css'
-import { ReactNode } from 'react';
+import { ReactNode, useState } from 'react';
 
 type Props = {
     title: string;
@@ -17,8 +17,8 @@ const Blog = ({ title, children, role = "", image = "" }: Props) => {
             <img src={image} alt="" className="w-[200px] sm:w-[300px] mt-[15px] sm:mt-[30px] border rounded-xl"></img>
             <h2 className="font-montserrat font-semibold text-[20px] sm:text-[30px] mt-[5px] sm:mt-[10px]"> {title} </h2>
             {(role != "") ? <h3 className="font-montserrat text-[16px] sm:text-[20px] sm:mt-[-5px]">{role}</h3> : null}
-            <div>
-                <p className="text-[12px] sm:mt-[10px]"> {children} </p>
+            <div className="overflow-hidden mb-[10px] mx-[10px]">
+                <p className="text-[12px] xl:text-[14px] text-center sm:mt-[10px]"> {children} </p>
             </div>
         </div>
     );

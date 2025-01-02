@@ -26,7 +26,7 @@ function App(){
         <h1 className="font-montserrat font-extrabold text-[7vw] lg:text-[48px] text-white text-center mt-[40px] mb-[40px]">Projects</h1>
         <BlogBox></BlogBox>
       </div>
-      <p className="text-white text-center font-mono mt-[50px]">
+      <p className="text-white text-[12px] text-center font-mono mt-[50px]">
         Designed by Dinidu Samaranayake using Figma <br/>
         Developed by Dinidu Samaranayake via Vite + React.JS + Tailwind <br/>
         <a className="text-gray-400" href="https://github.com/PaninGitHub/portfolio-app">Click here for Github Repo</a>
