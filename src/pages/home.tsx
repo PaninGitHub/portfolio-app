@@ -1,11 +1,11 @@
-import Navibar from "./assets/components/Navibar";
-import Hero from "./assets/components/Hero";
-import DescriptionBox from "./assets/components/DescriptionBox";
-import Blog from "./assets/components/Blog"
-import BlogBox from "./assets/components/BlogBox"
+import Navibar from "../assets/components/Navibar";
+import Hero from "../assets/components/Hero";
+import DescriptionBox from "../assets/components/DescriptionBox";
+import Blog from "../assets/components/Blog"
+import BlogBox from "../assets/components/BlogBox"
 
 
-function App(){
+function Home(){
   const layout = [
     {}
   ]
@@ -36,4 +36,4 @@ function App(){
   )
 }
 
-export default App;
+export default Home;

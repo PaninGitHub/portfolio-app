@@ -9,6 +9,10 @@ type Props = {
 }
 
 const Blog = ({ title, children, role = "", image = "" }: Props) => {
+    const [isExpanded, setExpansion] = useState(false)
+
+    
+
     const openBlog = () => {
         console.log("Open sesame!")
     } 

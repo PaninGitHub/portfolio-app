@@ -5,7 +5,7 @@ import '../../App.css';
 const BlogBox = () => {
     return(
         <div className="w-[80vw] grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] sm:grid-cols-[repeat(auto-fit,minmax(400px,1fr))] gap-15 justify-items-center">
-            <Blog title="OceanSPhere" role="Member" image="images.png">
+            <Blog title="OceanSphere" role="Member" image="images.png">
             Welcome to OceanSphere
             Dive into the future with OceanSphere, the premier platform for exploring the wonders of our underwater world. Designed for ocean enthusiasts, researchers, and dreamers alike, OceanSphere bridges the gap between humanity and the deep blue sea. With cutting-edge virtual tours, real-time oceanic data, and a vibrant community of like-minded individuals, our website provides an unparalleled gateway to the mysteries and marvels beneath the waves. Whether you're planning your next diving adventure or studying marine ecosystems, OceanSphere is your ultimate resource.
 
