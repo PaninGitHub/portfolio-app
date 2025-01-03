@@ -15,7 +15,7 @@ const HeroButton = ({ children, url, image = "" }: Props) => {
     return (
         <button 
             onClick={handleRedirect} 
-            className="inline-flex flex-row items-center justify-around mx-[10px] mb-[10px] bg-[#ece6f0] border-none text-black font-roboto w-[100px] lg:w-[140px] px-[5px] py-[8px] text-center no-underline text-sm lg:text-lg rounded-3xl"
+            className="duration-150 hover:scale-105 inline-flex flex-row items-center justify-around mx-[10px] mb-[10px] bg-[#ece6f0] border-none text-black font-roboto w-[100px] lg:w-[140px] px-[5px] py-[8px] text-center no-underline text-sm lg:text-lg rounded-3xl"
         >
             <img src={image} alt="" className="w-[32px]" />
             {children}

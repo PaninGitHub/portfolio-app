@@ -26,7 +26,7 @@ const Hero = ({ children }: Props) => {
                     }
                 `}
             </style>
-            <div className="flex flex-col lg:flex-row-reverse items-center lg:justify-around md:ml-[20px] lg:ml-[50px] text-center">
+            <div className="flex flex-col lg:flex-row-reverse items-center lg:justify-around md:ml-[20px] lg:ml-[50px] text-center lg:h-[90vh]">
                 <img src="dinidu.png" alt="Portrait" className="img-shadow min-w-[5vw] max-w-[90vw] lg:min-w-[250px] lg:max-w-[35vw]"></img>
                 <div className="text-center lg:text-start mx-[5px] lg:[mx=40px] max-w-[80vw] lg:max-w-[40vw]">
                     <h1 className="font-montserrat font-extrabold text-[7vw] lg:text-[48px] text-white">Dinidu Samaranayake</h1>
