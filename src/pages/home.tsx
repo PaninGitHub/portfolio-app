@@ -1,18 +1,11 @@
-import Navibar from "../assets/components/Navibar";
 import Hero from "../assets/components/Hero";
-import DescriptionBox from "../assets/components/DescriptionBox";
-import Blog from "../assets/components/Blog"
 import BlogBox from "../assets/components/BlogBox"
 
 
 const Home = () => {
-  const layout = [
-    {}
-  ]
   return(
     <>
-      <Hero>
-      </Hero>
+      <Hero> </Hero>
       <div className="flex flex-col items-center">
         <h1 className="font-montserrat font-extrabold text-[7vw] lg:text-[48px] text-white text-center mt-[40px] mb-[40px]">Projects</h1>
         <BlogBox></BlogBox>

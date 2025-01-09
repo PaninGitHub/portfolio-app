@@ -1,5 +1,5 @@
 import '../../App.css'
-import { ReactNode, useState } from 'react';
+import { ReactNode } from 'react';
 
 type Props = {
     title: string;
@@ -11,18 +11,16 @@ type Props = {
 }
 
 const Blog = ({ title, children, role = "", image = "", git_url = "", proj_url = ""}: Props) => {
-    let type = ""
+    //Remember this determines type
+    let type = "git"
     const handleRedirect = () => {
-        if(type = "git"){
+        if(type == "git"){
             window.open(git_url, "_blank"); 
         }
-        if(type = "project_url"){
+        if(type == "project_url"){
             window.open(proj_url, "_blank")
         }
     };
-    const openBlog = () => {
-        console.log("Open sesame!")
-    } 
     return (
         <div className="duration-100 flex flex-col items-center w-[250px] sm:w-[350px] h-[400px] sm:h-[550px] hover:scale-105 shadow-lg border-[1px] border-[#FFF5F580] bg-white bg-opacity-5 rounded-3xl text-white mb-[40px]">
             <img src={image} alt="" className="bg-contain w-[200px] h-[200px] mt-[15px] sm:mt-[30px] border rounded-xl"></img>
