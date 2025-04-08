@@ -38,8 +38,11 @@ const Hero = ({ children }: Props) => {
                     </div>
                     <p className="font-roboto font-normal text-[1vm] md:text-[16px] mt-[10px] text-white">{ children }</p>
                     <DescriptionBox header="Education">Texas A&M - Sophomore B.S in Computer Science</DescriptionBox>
-                    <DescriptionBox header="Skills">
-                    HTML, CSS, Javascript, ReactJS, MongoDB, ExpressJS, Git, Rython, C++, Numpy, Pandas
+                    <DescriptionBox header="Languages">
+                    HTML, CSS, Javascript, Python, C++, Java, SQL, Haskell
+                    </DescriptionBox>
+                    <DescriptionBox header="Technologies">
+                    React.JS, Pandas, Numpy, Node.JS, GraphQL, REST, Tailwind 
                     </DescriptionBox>
                 </div>
             </div>

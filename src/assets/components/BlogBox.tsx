@@ -4,6 +4,10 @@ import '../../App.css';
 const BlogBox = () => {
     return(
         <div className="w-[80vw] grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] sm:grid-cols-[repeat(auto-fit,minmax(350px,1fr))] gap-15 justify-items-center">
+            <Blog title="Ecliptix" role="AI Developer" image="ecliptixtemplogo.png">
+                An advising AI bot designed to help guide Texas A&M students in the 
+                right direction in their education and career.
+            </Blog>
             <Blog title="CircAnalytics" role="Developer" image="circanalytics.png" git_url="https://github.com/Aran203/cricanalytics">
                 A multi-page Streamlit dashboard with several metrics and graphs using granular shot type data
             </Blog>
@@ -15,7 +19,6 @@ const BlogBox = () => {
                 Created during Texas A&M's Fall 2024 Datathon, a dashboard that shows various insights
                 for the restaurant chain "Roni's Mac Bar" using provided data 
             </Blog>
-
         </div>
     )
 }
