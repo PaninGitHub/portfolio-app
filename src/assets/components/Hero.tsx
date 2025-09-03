@@ -34,15 +34,23 @@ const Hero = ({ children }: Props) => {
                     <div className="flex flex-wrap max-w-[80vw] justify-center lg:justify-start mt-[20px] lg:mt-[20px]">
                         <HeroButton image='github.png' url='https://github.com/PaninGitHub'>Github</HeroButton>
                         <HeroButton image='linkedin.png' url='https://www.linkedin.com/in/dinids/'>LinkedIn</HeroButton>
-                        <HeroButton image='resume.png' url='https://drive.google.com/file/d/1fEUtPP5iqM9bTx_DVj4_SALh36Irl7Lr/view?usp=sharing'>Resume</HeroButton>
+                        <HeroButton image='resume.png' url='https://1drv.ms/w/c/7028e327ce3cf92f/EeRBdZg2QV9NsQ7jHXiLDv8BCAcFz9Jgk4EIuvlMxi2xCQ?e=ymIyef'>Resume</HeroButton>
                     </div>
                     <p className="font-roboto font-normal text-[1vm] md:text-[16px] mt-[10px] text-white">{ children }</p>
-                    <DescriptionBox header="Education">Texas A&M - Sophomore B.S in Computer Science</DescriptionBox>
+                    <DescriptionBox header="Education">
+                    {new Date() >= new Date("2027-05-01")
+                        ? "Texas A&M – B.S. in Computer Science"
+                        : new Date() >= new Date("2026-05-01")
+                        ? "Texas A&M – Senior, B.S. in Computer Science"
+                        : new Date() >= new Date("2025-05-01")
+                        ? "Texas A&M – Junior, B.S. in Computer Science"
+                        : "Texas A&M – B.S. in Computer Science"}
+                    </DescriptionBox>
                     <DescriptionBox header="Languages">
                     HTML, CSS, Javascript, Python, C++, Java, SQL, Haskell
                     </DescriptionBox>
                     <DescriptionBox header="Technologies">
-                    React.JS, Pandas, Numpy, Node.JS, GraphQL, REST, Tailwind 
+                    React.JS, React Native, Javascript, Express.JS, Tanstack, Gluestack, REST, Tailwind, Pandas, Numpy, Node.JS, GraphQL
                     </DescriptionBox>
                 </div>
             </div>

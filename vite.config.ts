@@ -9,5 +9,8 @@ export default defineConfig({
       //PUT YOUR FUCKING PLUGINS HERE DUMBASS
       plugins: [tailwindcss()],
     },
+  },
+  define: {
+  __WS_TOKEN__: JSON.stringify(''),
   }
 })
