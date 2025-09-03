@@ -1,6 +1,5 @@
 
 import { useState, useRef } from 'react' 
-import { X, ExternalLink, Github } from "lucide-react";
 import DescriptionModal from "../assets/components/DescriptionModal";
 
 /**

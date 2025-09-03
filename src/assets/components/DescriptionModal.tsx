@@ -18,7 +18,6 @@ export default function DescriptionModal({
   title,
   subtitle,
   children,
-  actions = [],
   returnFocusRef,
 }: {
   open: boolean;
