@@ -3,8 +3,8 @@ import { useState, useRef } from 'react'
 import DescriptionModal from "../assets/components/DescriptionModal";
 
 /**
- * Elegant, accessible modal for a professional portfolio
- * - Minimal aesthetic with subtle motion
+ * Elegant, accessible modalfor a professional portfolio
+ * - Minimal aesthetic with subtle motio
  * - Keyboard & screen-reader accessible
  * - Focus-trap + return-focus
  * - Closes on ESC and backdrop click
