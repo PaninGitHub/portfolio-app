@@ -30,11 +30,11 @@ const Hero = ({ children }: Props) => {
                 <img src="dinidu.png" alt="Portrait" className="img-shadow min-w-[5vw] max-w-[90vw] lg:min-w-[250px] lg:max-w-[35vw]"></img>
                 <div className="text-center lg:text-start mx-[5px] lg:[mx=40px] max-w-[80vw] lg:max-w-[40vw]">
                     <h1 className="font-montserrat font-extrabold text-[7vw] lg:text-[48px] text-white">Dinidu Samaranayake</h1>
-                    <h2 className="font-roboto font-normal text-[16px] lg:text-[24px] text-white">Data Analyst + Full Stack Developer</h2>
+                    <h2 className="font-roboto font-normal text-[16px] lg:text-[24px] text-white">Full Stack Application Developer</h2>
                     <div className="flex flex-wrap max-w-[80vw] justify-center lg:justify-start mt-[20px] lg:mt-[20px]">
                         <HeroButton image='github.png' url='https://github.com/PaninGitHub'>Github</HeroButton>
                         <HeroButton image='linkedin.png' url='https://www.linkedin.com/in/dinids/'>LinkedIn</HeroButton>
-                        <HeroButton image='resume.png' url='https://1drv.ms/w/c/7028e327ce3cf92f/EeRBdZg2QV9NsQ7jHXiLDv8BCAcFz9Jgk4EIuvlMxi2xCQ?e=ymIyef'>Resume</HeroButton>
+                        <HeroButton image='resume.png' url='https://1drv.ms/b/c/7028e327ce3cf92f/IQD38b9SLPDSR556Xt9wbnW-AQPzx6iPh7xSMAMHsJptK0g?e=6rspkW'>Resume</HeroButton>
                     </div>
                     <p className="font-roboto font-normal text-[1vm] md:text-[16px] mt-[10px] text-white">{ children }</p>
                     <DescriptionBox header="Education">
@@ -47,10 +47,10 @@ const Hero = ({ children }: Props) => {
                         : "Texas A&M – B.S. in Computer Science"}
                     </DescriptionBox>
                     <DescriptionBox header="Languages">
-                    HTML, CSS, Javascript, Python, C++, Java, SQL, Haskell
+                    Javascript, Python, PostgreSQL, C++, Java, HTML, CSS
                     </DescriptionBox>
                     <DescriptionBox header="Technologies">
-                    React.JS, React Native, Javascript, Express.JS, Tanstack, Gluestack, REST, Tailwind, Pandas, Numpy, Node.JS, GraphQL
+                    React.JS, React Native, Javascript, Typescript, Express.JS, Docker, Tanstack, ROS2, Pyside6, Tailwind, Pandas, Numpy, GraphQL
                     </DescriptionBox>
                 </div>
             </div>

@@ -114,9 +114,7 @@ export default function DescriptionModal({
           className="absolute inset-0 bg-black/50 backdrop-blur-[2px]"
         />
 
-        {/* Centering wrapper */}
         <div className="absolute inset-0 grid place-items-center p-4 sm:p-6">
-          {/* Panel */}
           <motion.div
             role="dialog"
             aria-modal="true"
@@ -124,9 +122,8 @@ export default function DescriptionModal({
             variants={panelVariants}
             onKeyDown={handleKeyDown}
             ref={panelRef}
-            className="w-[min(92vw,720px)] rounded-2xl border border-slate-200 bg-white/95 p-6 shadow-2xl ring-1 ring-black/5 backdrop-blur-md dark:border-slate-700 dark:bg-slate-900/95"
+            className="w-[min(92vw,720px)] rounded-2xl border border-slate-200 bg-white/95 p-6 shadow-2xl ring-1 ring-black/5 backdrop-blur-md dark:border-[#222222] dark:bg-[#111111]/90"
           >
-            {/* Header */}
             <div className="mb-4 flex items-start justify-between gap-4">
               <div className="min-w-0">
                 {title && (

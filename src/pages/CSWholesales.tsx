@@ -3,8 +3,8 @@ import { useState, useRef } from 'react'
 import DescriptionModal from "../assets/components/DescriptionModal";
 
 /**
- * Elegant, accessible modalfor a professional portfolio
- * - Minimal aesthetic with subtle motio
+ * Elegant, accessible modal for a professional portfolio
+ * - Minimal aesthetic with subtle motion
  * - Keyboard & screen-reader accessible
  * - Focus-trap + return-focus
  * - Closes on ESC and backdrop click
@@ -33,7 +33,7 @@ export default function CSWholesales() {
       <DescriptionModal
         open={open}
         onClose={closeModal}
-        title="C&S Wholesales - Currently Working"
+        title="C&S Wholesales"
         subtitle="React Native • Javascript • Express.js • Gluestack • PostgreSQL • Tanstack • TailwindCSS"
         actions={[
         ]}
@@ -49,7 +49,7 @@ export default function CSWholesales() {
             Currently developing a vacation scheduling and management application for warehouse
             administrators and employees, replacing a legacy system with outdated
             technology and poor UI/UX. This new solution emphasizes modern, responsive
-            design with seamless integration with other new applications within our portal.
+            design with seamless integration with other new applications within the portal.
             </p>
         </div>
 
