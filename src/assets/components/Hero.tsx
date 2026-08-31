@@ -2,6 +2,7 @@ import '../../App.css'
 import { ReactNode } from 'react';
 import HeroButton from './HeroButton'
 import DescriptionBox from './DescriptionBox';
+import RotatingTitle from './RotatingTitle';
 
 type Props = {
     children: ReactNode;
@@ -26,11 +27,11 @@ const Hero = ({ children }: Props) => {
                     }
                 `}
             </style>
-            <div className="flex flex-col lg:flex-row-reverse items-center lg:justify-around md:ml-[20px] lg:ml-[50px] text-center lg:h-[90vh]">
+            <div className="flex flex-col lg:flex-row-reverse items-center lg:justify-around md:ml-[20px] lg:ml-[50px] text-center lg:min-h-[90vh] lg:py-[40px]">
                 <img src="dinidu.png" alt="Portrait" className="img-shadow min-w-[5vw] max-w-[90vw] lg:min-w-[250px] lg:max-w-[35vw]"></img>
                 <div className="text-center lg:text-start mx-[5px] lg:[mx=40px] max-w-[80vw] lg:max-w-[40vw]">
                     <h1 className="font-montserrat font-extrabold text-[7vw] lg:text-[48px] text-white">Dinidu Samaranayake</h1>
-                    <h2 className="font-roboto font-normal text-[16px] lg:text-[24px] text-white">Full Stack Application Developer</h2>
+                    <RotatingTitle/>
                     <div className="flex flex-wrap max-w-[80vw] justify-center lg:justify-start mt-[20px] lg:mt-[20px]">
                         <HeroButton image='github.png' url='https://github.com/PaninGitHub'>Github</HeroButton>
                         <HeroButton image='linkedin.png' url='https://www.linkedin.com/in/dinids/'>LinkedIn</HeroButton>
@@ -39,18 +40,25 @@ const Hero = ({ children }: Props) => {
                     <p className="font-roboto font-normal text-[1vm] md:text-[16px] mt-[10px] text-white">{ children }</p>
                     <DescriptionBox header="Education">
                     {new Date() >= new Date("2027-05-01")
-                        ? "Texas A&M – B.S. in Computer Science"
+                        ? "Texas A&M University — B.S. Computer Science, Minor in Statistics"
                         : new Date() >= new Date("2026-05-01")
-                        ? "Texas A&M – Senior, B.S. in Computer Science"
+                        ? "Texas A&M University — Senior, B.S. Computer Science, Minor in Statistics"
                         : new Date() >= new Date("2025-05-01")
-                        ? "Texas A&M – Junior, B.S. in Computer Science"
-                        : "Texas A&M – B.S. in Computer Science"}
+                        ? "Texas A&M University — Junior, B.S. Computer Science, Minor in Statistics"
+                        : "Texas A&M University — B.S. Computer Science, Minor in Statistics"}
+                    {" · GPA 3.74 · Aug 2023 – May 2027"}
                     </DescriptionBox>
                     <DescriptionBox header="Languages">
-                    Javascript, Python, PostgreSQL, C++, Java, HTML, CSS
+                    JavaScript, TypeScript, Python, SQL (PostgreSQL, MySQL), PromQL, KQL, PowerShell, C++, Java, HTML, CSS
                     </DescriptionBox>
                     <DescriptionBox header="Technologies">
-                    React.JS, React Native, Javascript, Typescript, Express.JS, Docker, Tanstack, ROS2, Pyside6, Tailwind, Pandas, Numpy, GraphQL
+                    React, React Native, Node.js, Express.js, TanStack, Gluestack, Tailwind, GraphQL, Docker, Linux,
+                    Microsoft Azure, Azure DevOps CI/CD, Grafana, Google Cloud Platform, Cloudflare, Git,
+                    Pandas, NumPy, GDAL, Matplotlib, Seaborn, ROS2, PySide6, OpenCV
+                    </DescriptionBox>
+                    <DescriptionBox header="Relevant Coursework">
+                    Intro to Computer Systems, Software Reverse Engineering, Computer and Network Security,
+                    Foundations of Software Engineering
                     </DescriptionBox>
                 </div>
             </div>

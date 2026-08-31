@@ -2,18 +2,7 @@
 import { useState, useRef } from 'react'
 import DescriptionModal from "../assets/components/DescriptionModal";
 
-/**
- * Elegant, accessible modal for a professional portfolio
- * - Minimal aesthetic with subtle motion
- * - Keyboard & screen-reader accessible
- * - Focus-trap + return-focus
- * - Closes on ESC and backdrop click
- * - Prevents background scroll while open
- *
- * Tailwind required. Framer Motion + Lucide icons used for polish.
- */
-
-export default function CSWholesales() {
+export default function Woodside() {
   const [open, setOpen] = useState(false);
   const triggerRef = useRef<HTMLButtonElement | null>(null);
 
@@ -33,8 +22,8 @@ export default function CSWholesales() {
       <DescriptionModal
         open={open}
         onClose={closeModal}
-        title="C&S Wholesale Grocers"
-        subtitle="React Native • JavaScript • Express.js • PostgreSQL • TanStack • Gluestack • TailwindCSS"
+        title="Woodside Energy"
+        subtitle="Microsoft Azure • Azure Logic Apps • Grafana • PromQL • KQL • PowerShell • ServiceNow"
         actions={[
         ]}
         returnFocusRef={triggerRef}
@@ -46,14 +35,12 @@ export default function CSWholesales() {
             Overview
             </h3>
             <p>
-            Full Stack Application Developer, May 2025 &ndash; January 2026 &mdash; full-time over the
-            summer, then part-time through the fall semester. I built a vacation scheduling and
-            management application for warehouse employees and administrators across the company&apos;s
-            distribution centers, replacing a legacy tool that was old, awkward to use, and web-only
-            with no mobile support &mdash; a real problem for staff who spend the day on the warehouse
-            floor rather than at a desk. The rebuild was also part of a company-wide move onto a single
-            standardized stack, so the new app had to integrate cleanly with the other applications in
-            the portal.
+            Digital Operation Technology Intern in Houston, TX (June &ndash; August 2026). The
+            Operational Technology team had no centralized place to watch system health &mdash; metrics
+            and logs lived apart from each other, and there was no easy way to compare what was
+            happening right now against what had happened before. Spotting an anomaly meant digging
+            through several systems by hand. I built the monitoring layer that fixed that, then
+            automated the triage step on top of it.
             </p>
         </div>
 
@@ -65,31 +52,31 @@ export default function CSWholesales() {
             <ul className="space-y-1">
             <li className="flex items-start gap-2">
                 <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 mt-1" />
-                Designed and implemented core systems across the stack &mdash; React Native with
-                Gluestack and TailwindCSS on the front end, Express.js and PostgreSQL behind it, and
-                TanStack Query managing data fetching and cache.
+                Designed and built 20+ Grafana dashboards covering 110+ virtual machines and 6 firewall
+                clusters, giving 20+ engineers and leadership one place for real-time and historical
+                views of metrics and logs.
             </li>
             <li className="flex items-start gap-2">
                 <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 mt-1" />
-                Built 40+ REST endpoints with validation, tests, and structured error handling to keep
-                the app reliable and maintainable.
+                Built a production Azure Logic Apps pipeline with a two-stage LLM workflow: when a
+                Grafana alert fires, it runs a set of follow-up metric queries and auto-generates a
+                ServiceNow ticket containing the alert text, a plain-language summary, probable causes,
+                and suggested fixes &mdash; each backed by the query evidence it was drawn from.
             </li>
             <li className="flex items-start gap-2">
                 <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 mt-1" />
-                Cut fetch times by up to 85% by batching queries, memoizing expensive computations, and
-                applying standard React render optimizations.
+                Optimized queries and dashboard structure so 80+ million syslog records can be viewed
+                and filtered in under a minute.
             </li>
             <li className="flex items-start gap-2">
                 <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 mt-1" />
-                Implemented and optimized 12 responsive screens that hold up on phone, tablet, and
-                desktop &mdash; the legacy system offered none of that.
+                Wrote PowerShell scripts to automate deployment of dashboards and configurations through
+                Azure DevOps CI/CD, so the monitoring stack ships the same way the rest of the platform does.
             </li>
             <li className="flex items-start gap-2">
                 <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 mt-1" />
-                Co-owned development with an intern partner over the summer, then carried the project on
-                my own through January &mdash; documenting requirements, communicating functionality
-                across the team, and taking architecture and deployment decisions to mentors and team
-                leads in bi-weekly standups.
+                Sole developer on the dashboards and the alerting pipeline, working alongside three
+                engineers for privileged access &mdash; one of whom was the primary stakeholder I built against.
             </li>
             </ul>
         </div>
@@ -102,24 +89,23 @@ export default function CSWholesales() {
             <ul className="space-y-1">
             <li className="flex items-start gap-2">
                 <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 mt-1" />
-                Replaced a dated, desktop-bound tool with a mobile-first app, so employees can request
-                and manage time off from anywhere and administrators can approve it the same way.
+                Gave the OT team a single centralized view of system health across the estate, replacing
+                a manual hunt across disconnected systems.
             </li>
             <li className="flex items-start gap-2">
                 <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 mt-1" />
-                Moved the workflow onto the company&apos;s standardized stack, letting it integrate with
-                the other applications being built into the same portal.
+                Reduced time-to-detect and time-to-resolve: triage now starts from a ticket that already
+                contains a summary, probable causes, and supporting evidence instead of a bare alert.
             </li>
             <li className="flex items-start gap-2">
                 <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 mt-1" />
-                Delivered an in-depth technical demo to IT leadership &mdash; including the Director of
-                IT and the Houston Digital VP &mdash; which was well received for both clarity and
-                functionality, and raised the profile of our team.
+                Made the log estate actually usable &mdash; 80+ million syslogs viewable and filterable
+                in under a minute rather than being effectively off-limits.
             </li>
             <li className="flex items-start gap-2">
                 <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 mt-1" />
-                Helped establish better coding practices (unit testing, structured error handling,
-                documentation) for whoever picks the project up next.
+                The primary stakeholder and the wider team recognized the work as delivering real
+                business value to Woodside.
             </li>
             </ul>
         </div>
@@ -130,27 +116,28 @@ export default function CSWholesales() {
                 What I Learned
             </h3>
             <p className="text-slate-600 dark:text-slate-300 mb-2">
-                Throughout my time I not only dove deep into full-stack development, but also
-                learned how to think as a developer and as a teammate. Over the months I
-                improved on:
+                This was my first time building inside an enterprise cloud environment with real
+                operational stakes. The things that stuck:
             </p>
             <ul className="space-y-1">
                 <li className="flex items-start gap-2">
                 <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 mt-1" />
-                Breaking down big problems into smaller, manageable subproblems.
+                Writing queries that stay fast at scale &mdash; the difference between a dashboard people
+                use and one they abandon is almost always query design.
                 </li>
                 <li className="flex items-start gap-2">
                 <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 mt-1" />
-                Balancing writing clean, efficient code with delivering features on time.
+                Designing LLM output engineers will actually trust: every claim in a generated ticket
+                has to point back to the data that produced it.
                 </li>
                 <li className="flex items-start gap-2">
                 <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 mt-1" />
-                Communicating effectively with both technical and non-technical team members.
+                Treating monitoring as a product with users, not a side artifact &mdash; sitting with the
+                stakeholder and building to how they actually work.
                 </li>
                 <li className="flex items-start gap-2">
                 <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 mt-1" />
-                Understanding how design choices and error handling directly impact the user
-                experience.
+                Shipping infrastructure through CI/CD instead of clicking through a console.
                 </li>
             </ul>
             </div>
