@@ -5,12 +5,13 @@ type Props = {
     title: string;
     children: ReactNode;
     role?: string;
+    tags?: string;
     image?: string;
     git_url?: string;
     proj_url?: string;
 }
 
-const Blog = ({ title, children, role = "", image = "", git_url = "", proj_url = ""}: Props) => {
+const Blog = ({ title, children, role = "", tags = "", image = "", git_url = "", proj_url = ""}: Props) => {
     //Remember this determines type
     let type = "git"
     const handleRedirect = () => {
@@ -22,10 +23,11 @@ const Blog = ({ title, children, role = "", image = "", git_url = "", proj_url =
         }
     };
     return (
-        <div className="duration-100 flex flex-col items-center w-[250px] sm:w-[350px] h-[400px] sm:h-[550px] hover:scale-105 shadow-lg border-[1px] border-[#FFF5F580] bg-white bg-opacity-5 rounded-3xl text-white mb-[40px]">
+        <div className="duration-100 flex flex-col items-center w-[250px] sm:w-[350px] h-auto min-h-[400px] sm:min-h-[550px] pb-[10px] hover:scale-105 shadow-lg border-[1px] border-[#FFF5F580] bg-white bg-opacity-5 rounded-3xl text-white mb-[40px]">
             <img src={image} alt="" className="bg-contain w-[200px] h-[200px] mt-[15px] sm:mt-[30px] border rounded-xl"></img>
             <h2 className="font-montserrat font-semibold text-center text-[20px] sm:text-[30px] mt-[5px] sm:mt-[10px]"> {title} </h2>
             {(role != "") ? <h3 className="font-montserrat text-[16px] text-center sm:text-[20px] sm:mt-[-5px]">{role}</h3> : null}
+            {(tags != "") ? <p className="font-mono text-[10px] sm:text-[12px] text-center text-gray-400 mt-[4px] mx-[20px]">{tags}</p> : null}
             <div className="overflow-hidden mb-[20px] mx-[20px]">
                 <p className="text-[12px] xl:text-[16px] text-center sm:mt-[10px]"> {children} </p>
             </div>

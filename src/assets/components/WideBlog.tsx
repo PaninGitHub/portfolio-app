@@ -29,7 +29,7 @@ const WideBlog = ({ title, children, role = "", image = "", git_url = "", proj_u
         <>
             {isDesktop ? (
                 // Desktop version: 
-                <div className="overflow-hidden duration-100 relative min-w-[600px] w-[80vw] max-w-[1000px] h-[400px] sm:h-[550px] md:h-[300px] hover:scale-105 shadow-lg border-[1px] border-[#FFF5F580] bg-white bg-opacity-5 rounded-3xl text-white mb-[40px]">
+                <div className="overflow-hidden duration-100 relative min-w-[600px] w-[80vw] max-w-[1000px] h-[400px] sm:h-[550px] md:h-auto md:min-h-[300px] md:pb-[20px] hover:scale-105 shadow-lg border-[1px] border-[#FFF5F580] bg-white bg-opacity-5 rounded-3xl text-white mb-[40px]">
                     <div className="w-7/12 flex flex-col items-left ml-[20px] mt-[15px] text-left">
                         <h2 className="font-montserrat font-semibold text-[30px]"> {title} </h2>
                         {(role != "") ? <h3 className="font-montserrat text-[18px] mt-[5px]">{role}</h3> : null}
@@ -47,7 +47,7 @@ const WideBlog = ({ title, children, role = "", image = "", git_url = "", proj_u
                 </div>
             ) : (
                 // Mobile version: 
-                <div className="overflow-hidden duration-100 flex flex-col items-center min-w-[250px] max-w-[80vw] max-h-[450px] sm:max-h-[500px] hover:scale-105 shadow-lg border-[1px] border-[#FFF5F580] bg-white bg-opacity-5 rounded-3xl text-white mb-[40px]">
+                <div className="overflow-hidden duration-100 flex flex-col items-center min-w-[250px] max-w-[80vw] hover:scale-105 shadow-lg border-[1px] border-[#FFF5F580] bg-white bg-opacity-5 rounded-3xl text-white mb-[40px]">
                 <img src={image} alt="" className="bg-contain w-full max-h-[200px] maskvert"></img>
                 <h2 className="text-center font-montserrat font-semibold text-[20px] sm:text-[30px] mt-[15px] mx-[15px] sm:mt-[10px]"> {title} </h2>
                 {(role != "") ? <h3 className="font-montserrat text-center text-[16px] sm:text-[20px] sm:mt-[-5px]">{role}</h3> : null}
