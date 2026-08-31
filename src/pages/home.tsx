@@ -7,10 +7,7 @@ const Home = () => {
     <>
       <Hero>
         Texas A&amp;M computer science student with production experience across full-stack application
-        development and cloud infrastructure and monitoring. I like building applications and getting
-        hands-on with the services and systems behind them &mdash; APIs, data pipelines, and the dashboards
-        and automation that keep everything talking to each other. Outside of that I hike, produce music,
-        play games, and tinker with my homelab while chasing whatever new tech (usually AI) has my attention.
+        development and cloud infrastructure and monitoring.
       </Hero>
       <div className="flex flex-col items-center">
         <h1 className="font-montserrat font-extrabold text-[7vw] lg:text-[48px] text-white text-center mt-[40px] mb-[40px]">Experience</h1>

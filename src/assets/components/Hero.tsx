@@ -52,9 +52,9 @@ const Hero = ({ children }: Props) => {
                     JavaScript, TypeScript, Python, SQL (PostgreSQL, MySQL), PromQL, KQL, PowerShell, C++, Java, HTML, CSS
                     </DescriptionBox>
                     <DescriptionBox header="Technologies">
-                    React, React Native, Node.js, Express.js, TanStack, Gluestack, Tailwind, GraphQL, Docker, Linux,
-                    Microsoft Azure, Azure DevOps CI/CD, Grafana, Google Cloud Platform, Cloudflare, Git,
-                    Pandas, NumPy, GDAL, Matplotlib, Seaborn, ROS2, PySide6, OpenCV
+                    React, React Native, Node + Express.js, TanStack, Docker, Linux,
+                    Azure, Azure DevOps CI/CD, Grafana, GCP, Cloudflare, Git,
+                    Pandas, GDAL, Seaborn, ROS2, PySide6
                     </DescriptionBox>
                     <DescriptionBox header="Relevant Coursework">
                     Intro to Computer Systems, Software Reverse Engineering, Computer and Network Security,
