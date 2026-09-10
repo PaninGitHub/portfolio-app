@@ -35,7 +35,7 @@ const Hero = ({ children }: Props) => {
                     <div className="flex flex-wrap max-w-[80vw] justify-center lg:justify-start mt-[20px] lg:mt-[20px]">
                         <HeroButton image='github.png' url='https://github.com/PaninGitHub'>Github</HeroButton>
                         <HeroButton image='linkedin.png' url='https://www.linkedin.com/in/dinids/'>LinkedIn</HeroButton>
-                        <HeroButton image='resume.png' url='https://1drv.ms/b/c/7028e327ce3cf92f/IQBo16zDQXG_SoCJHmffm-BPAcEpyhUNDXCQ082c6Uo-sts?e=RLqG5O'>Resume</HeroButton>
+                        <HeroButton image='resume.png' url='https://1drv.ms/b/c/7028e327ce3cf92f/IQARiM_nD4MuQZmulPJCuy1pAUZYwW240kPPL9mJXebRTt0?e=tQqmC9'>Resume</HeroButton>
                     </div>
                     <p className="font-roboto font-normal text-[1vm] md:text-[16px] mt-[10px] text-white">{ children }</p>
                     <DescriptionBox header="Education">

@@ -8,11 +8,10 @@ type Props = {
 
 //Roles drawn from actual experience: C&S (full stack), Woodside (cloud/observability), ATMO (data)
 const DEFAULT_TITLES = [
-    "Software Engineer",
     "Full Stack Developer",
-    "Backend Engineer",
     "Data Engineer",
     "Cloud & Observability Engineer",
+    "Texas A&M Computer Science 27'"
 ]
 
 const RotatingTitle = ({ titles = DEFAULT_TITLES, interval = 3000 }: Props) => {

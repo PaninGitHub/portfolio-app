@@ -8,9 +8,9 @@ import AtmosphericSciences from '../../pages/AtmosphericSciences';
 const BlogBox = () => {
     return(
         <div className="w-[80vw] grid grid-cols-1 gap-6 justify-items-center">
-            <WideBlog title="Woodside Energy" role="Digital Operation Technology Intern · Jun 2026 – Aug 2026" image="placeholder.png">
-            Built the OT team's centralized monitoring layer in Azure and Grafana — 20+ dashboards across 110+ VMs and
-            6 firewall clusters — plus a production LLM pipeline that turns alerts into evidence-backed ServiceNow tickets.
+            <WideBlog title="Woodside Energy" role="Digital Operation Technology Intern · Jun 2026 – Aug 2026" image="Woodside.png">
+            Built the OT team's centralized monitoring layer in Azure and Grafana which contains 20+ dashboards across 110+ VMs and
+            6 firewall clusters, plus a production LLM pipeline that turns alerts into evidence-backed ServiceNow tickets.
             <Woodside></Woodside>
             </WideBlog>
             <WideBlog title="C&S Wholesale Grocers" role="Full Stack Application Developer · May 2025 – Jan 2026" image="cs_wholesales.png">

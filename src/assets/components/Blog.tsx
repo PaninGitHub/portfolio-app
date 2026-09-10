@@ -13,12 +13,11 @@ type Props = {
 
 const Blog = ({ title, children, role = "", tags = "", image = "", git_url = "", proj_url = ""}: Props) => {
     //Remember this determines type
-    let type = "git"
-    const handleRedirect = () => {
-        if(type == "git"){
-            window.open(git_url, "_blank"); 
+    const handleRedirect = (type: "git" | "proj") => {
+        if (type === "git") {
+            window.open(git_url, "_blank")
         }
-        if(type == "project_url"){
+        if (type === "proj") {
             window.open(proj_url, "_blank")
         }
     };
@@ -31,10 +30,16 @@ const Blog = ({ title, children, role = "", tags = "", image = "", git_url = "",
             <div className="overflow-hidden mb-[20px] mx-[20px]">
                 <p className="text-[12px] xl:text-[16px] text-center sm:mt-[10px]"> {children} </p>
             </div>
-            {(git_url != "") ? 
-                <button onClick={handleRedirect} title="github" className="duration-150 hover:bg-[#c9c5d3] inline-flex flex-row items-center justify-around mx-[10px] mb-[10px] bg-[#f1f0f3] border-none text-black font-montserrat font-bold w-[100px] lg:w-[140px] px-[5px] py-[5px] text-center no-underline text-sm lg:text-lg rounded-3xl">
+            {(git_url != "") ?
+                <button onClick={() => handleRedirect("git")} title="github" className="duration-150 hover:bg-[#c9c5d3] inline-flex flex-row items-center justify-around mx-[10px] mb-[10px] bg-[#f1f0f3] border-none text-black font-montserrat font-bold w-[100px] lg:w-[140px] px-[5px] py-[5px] text-center no-underline text-sm lg:text-lg rounded-3xl">
                     Github
                     <img src="github.png" alt="" className="w-[32px]" />
+                </button>
+            : null}
+            {(proj_url != "") ?
+                <button onClick={() => handleRedirect("proj")} title="github" className="duration-150 hover:bg-[#c9c5d3] inline-flex flex-row items-center justify-around mx-[10px] mb-[10px] bg-[#f1f0f3] border-none text-black font-montserrat font-bold w-[100px] lg:w-[140px] px-[5px] py-[5px] text-center no-underline text-sm lg:text-lg rounded-3xl">
+                    More Info
+                    {/* <img src="github.png" alt="" className="w-[32px]" /> */}
                 </button>
             : null}
         </div>

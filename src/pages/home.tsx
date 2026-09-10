@@ -6,8 +6,6 @@ const Home = () => {
   return(
     <>
       <Hero>
-        Texas A&amp;M computer science student with production experience across full-stack application
-        development and cloud infrastructure and monitoring.
       </Hero>
       <div className="flex flex-col items-center">
         <h1 className="font-montserrat font-extrabold text-[7vw] lg:text-[48px] text-white text-center mt-[40px] mb-[40px]">Experience</h1>
