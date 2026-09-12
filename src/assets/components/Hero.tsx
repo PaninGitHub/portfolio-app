@@ -5,7 +5,7 @@ import DescriptionBox from './DescriptionBox';
 import RotatingTitle from './RotatingTitle';
 
 type Props = {
-    children: ReactNode;
+    children?: ReactNode;
 }
 
 const Hero = ({ children }: Props) => {
